@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Dicktionary.Services
+namespace Dictionary.Services
 {
     public static class DictionaryMyFavorite
     {

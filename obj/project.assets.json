@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bao/Desktop/DIcktionary-main/DIcktionary-main.csproj",
-      "projectName": "DIcktionary-main",
-      "projectPath": "/Users/bao/Desktop/DIcktionary-main/DIcktionary-main.csproj",
+      "projectUniqueName": "/Users/bao/Desktop/Dictionary-main/Dictionary-main.csproj",
+      "projectName": "Dictionary-main",
+      "projectPath": "/Users/bao/Desktop/Dictionary-main/Dictionary-main.csproj",
       "packagesPath": "/Users/bao/.nuget/packages/",
-      "outputPath": "/Users/bao/Desktop/DIcktionary-main/obj/",
+      "outputPath": "/Users/bao/Desktop/Dictionary-main/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/bao/.nuget/NuGet/NuGet.Config"

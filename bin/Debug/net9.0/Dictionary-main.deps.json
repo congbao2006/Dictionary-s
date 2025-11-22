@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v9.0": {
-      "DIcktionary-main/1.0.0": {
+      "Dictionary-main/1.0.0": {
         "runtime": {
-          "DIcktionary-main.dll": {}
+          "Dictionary-main.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "DIcktionary-main/1.0.0": {
+    "Dictionary-main/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,4 +1,4 @@
-namespace Dicktionary.Models
+namespace Dictionary.Models
 {
     public class Meaning
     {

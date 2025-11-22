@@ -2,9 +2,9 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
-using Dicktionary.Models;
+using Dictionary.Models;
 
-namespace Dicktionary.Data
+namespace Dictionary.Data
 {
     public static class FileHelper
     {

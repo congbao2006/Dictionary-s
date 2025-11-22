@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Dicktionary.Models;
-using Dicktionary.Data;
+using Dictionary.Models;
+using Dictionary.Data;
 
-namespace Dicktionary.Services
+namespace Dictionary.Services
 {
-    public static class DicktionaryService
+    public static class DictionaryService
     {
         public static Dictionary<string, Meaning> dictionary = new Dictionary<string, Meaning>();
         public static bool forSort = false;

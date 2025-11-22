@@ -1,10 +1,10 @@
-using Dicktionary.Models;
-using Dicktionary.Data;
+using Dictionary.Models;
+using Dictionary.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Dicktionary.Services
+namespace Dictionary.Services
 {
     public static class SynAntDictionary
     {

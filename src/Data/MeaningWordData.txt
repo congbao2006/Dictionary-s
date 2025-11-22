@@ -11,6 +11,7 @@ coffee|cà phê|A hot beverage made from roasted coffee beans.|She drinks a cup 
 computer|máy vi tính|An electronic device used to process data.|I use my computer to write code.
 dog|con chó|A loyal domestic animal often kept as a pet.|My dog barks when he sees strangers.
 elephant|con voi|A very large herbivorous mammal with a trunk and tusks.|The elephant used its trunk to drink water from the river.
+example|a representative form or pattern|This is a description.|This is an example sentence.
 flower|bông hoa| The colorful part of a plant that produces seeds.|She gave me a beautiful flower.
 food|thức ăn|Substance people or animals eat for nutrition.|Vietnamese food is very delicious.
 friend|bạn bè|Someone you know, like, and trust.|She is my best friend since childhood.
