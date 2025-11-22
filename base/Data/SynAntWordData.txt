@@ -1,2 +1,3 @@
-happy | cheerful, joyful, glad | sad, unhappy
+happy|cheerful, joyful, glad|sad, unhappy
 big | large, huge | small, tiny
+sad|unhappy|happy, glad
