@@ -10,7 +10,7 @@ namespace Dicktionary.Services
     {
         public static Dictionary<string, Meaning> dictionary = new Dictionary<string, Meaning>();
         public static bool forSort = false;
-        
+
         public static void Add(string word, string definition, string description, string example)
         {
             if (dictionary.ContainsKey(word))
@@ -25,38 +25,50 @@ namespace Dicktionary.Services
                 dictionary.Remove(word);
         }
 
-        public static void PrintListOfWord()
+        // -------------------------
+        //  PRINT LIST OF WORDS
+        // -------------------------
+        public static string PrintListOfWord()
         {
             if (dictionary.Count == 0)
             {
-                Console.WriteLine("null");
-                return;
+                return "null";
             }
 
-            Console.WriteLine("List of words:");
-            Console.WriteLine(new string('-', 40));
+            string result = "List of words:\n";
+            result += new string('-', 40) + "\n";
 
             foreach (var entry in dictionary)
             {
-                Console.WriteLine(entry.Key);
+                result += entry.Key + "\n";
             }
+
+            return result;
         }
 
-         public static void Search(string word)
+        // -------------------------
+        //  SEARCH WORD
+        // -------------------------
+        public static string Search(string word)
         {
             if (!dictionary.ContainsKey(word))
             {
-                Console.WriteLine($"not found {word}");
-                return;
+                return $"not found {word}";
             }
+
             var meaning = dictionary[word];
-            Console.WriteLine($"Từ: {word}");
-            Console.WriteLine($"Nghĩa: {meaning.Definition}");
-            Console.WriteLine($"Mô tả: {meaning.Description}");
-            Console.WriteLine($"Ví dụ: {meaning.Example}");
+
+            return
+                $"Từ: {word}\n" +
+                $"Nghĩa: {meaning.Definition}\n" +
+                $"Mô tả: {meaning.Description}\n" +
+                $"Ví dụ: {meaning.Example}";
         }
 
-        public static void LoadFromFile(string path)
+        // -------------------------
+        // LOAD FILE
+        // -------------------------
+        public static string LoadFromFile(string path)
         {
             var lines = FileHelper.ReadAllLines(path);
             int lineIndex = 0;
@@ -71,19 +83,22 @@ namespace Dicktionary.Services
             }
 
             if (lineIndex == 0)
-            Console.WriteLine("Not found any data");
-        else
-            if (!forSort) Console.WriteLine($"Load success {lineIndex+1} word");
-        else 
-            Console.WriteLine("Sorted successfully");
+                return "Not found any data";
+
+            if (!forSort)
+                return $"Load success {lineIndex + 1} word";
+
+            return "Sorted successfully";
         }
 
-        public static void AddToFile(string path, string word, string definition, string description, string example)
+        // -------------------------
+        // ADD TO FILE
+        // -------------------------
+        public static string AddToFile(string path, string word, string definition, string description, string example)
         {
             if (dictionary.ContainsKey(word))
             {
-                Console.WriteLine($"{word} exists, cannot add");
-                return;
+                return $"{word} exists, cannot add";
             }
 
             string line = $"{word}|{definition}|{description}|{example}";
@@ -91,18 +106,19 @@ namespace Dicktionary.Services
             try
             {
                 FileHelper.AppendLine(path, line);
-                Console.WriteLine("Saved successfully");
-
                 dictionary[word] = new Meaning(definition, description, example);
+                return "Saved successfully";
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error: {ex.Message}");
+                return $"Error: {ex.Message}";
             }
         }
 
-
-        public static void DeleteFromFile(string path, string word)
+        // -------------------------
+        // DELETE WORD FROM FILE
+        // -------------------------
+        public static string DeleteFromFile(string path, string word)
         {
             var lines = FileHelper.ReadAllLines(path);
 
@@ -115,13 +131,16 @@ namespace Dicktionary.Services
             if (dictionary.ContainsKey(word))
             {
                 dictionary.Remove(word);
-                Console.WriteLine($"Deleted '{word}' from file successfully.");
+                return $"Deleted '{word}' from file successfully.";
             }
-            else
-                Console.WriteLine($"{word} not found in file");
-            
+
+            return $"{word} not found in file";
         }
-        public static void SortFile(string path)
+
+        // -------------------------
+        // SORT FILE
+        // -------------------------
+        public static string SortFile(string path)
         {
             var lines = FileHelper.ReadAllLines(path);
             forSort = true;
@@ -134,7 +153,7 @@ namespace Dicktionary.Services
             FileHelper.WriteAllLines(path, lines);
 
             dictionary.Clear();
-            LoadFromFile(path);
+            return LoadFromFile(path);
         }
     }
 }
