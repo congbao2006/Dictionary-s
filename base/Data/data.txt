@@ -1,0 +1,31 @@
+apple|quả táo|A sweet red or green fruit|I like to eat an apple every day.
+banana|quả chuối|A yellow fruit|Bananas are rich in potassium.
+bird|con chim|A creature that has feathers and can usually fly.|The bird is singing on the branch.
+book|cuốn sách|A set of printed pages bound together.|She borrowed a book from the library.
+bread|bánh mì|A baked food made from flour and water.|He ate some bread with butter for breakfast.
+car|xe|A four-wheeled motor vehicle used for transport.|He drives his car to work every day.
+cat|con mèo|A small domesticated carnivorous mammal.|The cat is sleeping on the sofa.
+city|thành phố|A large and densely populated urban area.|Ho Chi Minh City is very busy at night.
+clock|đồng hồ|A device for measuring and showing time.|The clock on the wall shows 8 o’clock.
+coffee|cà phê|A hot beverage made from roasted coffee beans.|She drinks a cup of coffee every morning.
+computer|máy vi tính|An electronic device used to process data.|I use my computer to write code.
+dog|con chó|A loyal domestic animal often kept as a pet.|My dog barks when he sees strangers.
+elephant|con voi|A very large herbivorous mammal with a trunk and tusks.|The elephant used its trunk to drink water from the river.
+flower|bông hoa| The colorful part of a plant that produces seeds.|She gave me a beautiful flower.
+food|thức ăn|Substance people or animals eat for nutrition.|Vietnamese food is very delicious.
+friend|bạn bè|Someone you know, like, and trust.|She is my best friend since childhood.
+house|ngôi nhà|A structure for people to live in.|Their house has a beautiful garden.
+moon|mặt trăng|The natural satellite of Earth visible at night.|The full moon looks beautiful tonight.
+mountain|ngọn núi|A large natural elevation of the earth’s surface.|They climbed the mountain together.
+music|âm nhạc|The art of arranging sounds to create harmony and expression.|She listens to classical music.
+pen|cây bút|An instrument for writing or drawing with ink.|I use a blue pen to write notes.
+phone|điện thoại|A device used to make calls or send messages.|He forgot his phone at home.
+rain|mưa|Water that falls from clouds in drops.|It started to rain in the afternoon.
+river|con sông|A large stream of water flowing to the sea.|The river flows through the valley.
+school|trường học|A place where students go to learn.|The school closes at 5 p.m.
+student|học sinh|A learner enrolled in a school or course.|The student studied all night for the exam.
+sun|mặt trời|The star at the center of our solar system.|The sun rises in the east.
+teacher|giáo viên|Someone who educates students.|Our teacher explained the lesson clearly.
+train|tàu|A connected series of railway cars for transporting people or goods.|We traveled by train to Hanoi.
+tree|cái cây|A tall plant with a trunk, branches, and leaves.|There is a big tree in our backyard.
+water|nước|A colorless, tasteless, and odorless liquid essential for life.|Drink plenty of water every day.
