@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dictionary-main")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c6709c458c9e080ffe6657aea74420d92808b64")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7423f5e2036f37fa60da0f77c24b3719c0ff4ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dictionary-main")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dictionary-main")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
