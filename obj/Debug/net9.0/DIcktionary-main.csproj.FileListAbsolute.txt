@@ -1,0 +1,15 @@
+/Users/bao/Desktop/Dicktionary-main/bin/Debug/net9.0/DIcktionary-main
+/Users/bao/Desktop/Dicktionary-main/bin/Debug/net9.0/DIcktionary-main.deps.json
+/Users/bao/Desktop/Dicktionary-main/bin/Debug/net9.0/DIcktionary-main.runtimeconfig.json
+/Users/bao/Desktop/Dicktionary-main/bin/Debug/net9.0/DIcktionary-main.dll
+/Users/bao/Desktop/Dicktionary-main/bin/Debug/net9.0/DIcktionary-main.pdb
+/Users/bao/Desktop/Dicktionary-main/obj/Debug/net9.0/DIcktionary-main.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bao/Desktop/Dicktionary-main/obj/Debug/net9.0/DIcktionary-main.AssemblyInfoInputs.cache
+/Users/bao/Desktop/Dicktionary-main/obj/Debug/net9.0/DIcktionary-main.AssemblyInfo.cs
+/Users/bao/Desktop/Dicktionary-main/obj/Debug/net9.0/DIcktionary-main.csproj.CoreCompileInputs.cache
+/Users/bao/Desktop/Dicktionary-main/obj/Debug/net9.0/DIcktionary-main.dll
+/Users/bao/Desktop/Dicktionary-main/obj/Debug/net9.0/refint/DIcktionary-main.dll
+/Users/bao/Desktop/Dicktionary-main/obj/Debug/net9.0/DIcktionary-main.pdb
+/Users/bao/Desktop/Dicktionary-main/obj/Debug/net9.0/DIcktionary-main.genruntimeconfig.cache
+/Users/bao/Desktop/Dicktionary-main/obj/Debug/net9.0/ref/DIcktionary-main.dll
+/Users/bao/Desktop/Dicktionary-main/obj/Debug/net9.0/DIcktionary-main.sourcelink.json

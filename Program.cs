@@ -6,8 +6,11 @@ class Program
     static void Main()
     {
         Console.Clear();
-        string path = "/Users/bao/Desktop/Dicktionary-main/base/Data/data.txt";
-        DicktionaryService.LoadFromFile(path);
+        //string path = "/Users/bao/Desktop/Dicktionary-main/base/Data/MeaningWordData.txt";
+        string synAntPath = "/Users/bao/Desktop/Dicktionary-main/base/Data/SynAntWordData.txt";
+        SynAntDictionary.LoadFromFile(synAntPath);
+        Console.WriteLine(SynAntDictionary.SearchSyn("happy"));
+        //DicktionaryService.LoadFromFile(path);
         //DicktionaryService.PrintListOfWord();
         //DicktionaryService.Search("apple");
         //DicktionaryService.DeleteFromFile(path, "apple");
