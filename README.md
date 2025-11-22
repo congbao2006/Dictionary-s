@@ -4,13 +4,13 @@ Tài liệu này giải thích thiết kế, API và cách sử dụng của cá
 
 ---
 
-## 🚀 Động lực
+## Động lực
 
 Dự án **Dicktionary-main** được phát triển để cung cấp một hệ thống quản lý từ vựng ba lớp: **Định nghĩa cơ bản**, **Từ đồng/trái nghĩa** và **Danh sách yêu thích**. Hệ thống sử dụng cấu trúc **Dictionary trong bộ nhớ** để đảm bảo tốc độ tra cứu tức thì, đồng thời đồng bộ dữ liệu với các tệp lưu trữ bên ngoài (flat files) để duy trì tính ổn định và liên tục của dữ liệu.
 
 Mục tiêu chính là cung cấp các API **đơn giản, dễ sử dụng** để thực hiện các thao tác từ điển cốt lõi một cách hiệu quả.
 
-## 🧠 Cấu trúc Dữ liệu Cốt lõi
+## Cấu trúc Dữ liệu Cốt lõi
 
 Các dịch vụ chính dựa trên các cấu trúc dữ liệu sau trong bộ nhớ:
 
@@ -23,7 +23,7 @@ Các dịch vụ chính dựa trên các cấu trúc dữ liệu sau trong bộ 
 
 ---
 
-## ⚙️ Các thao tác chính (Top 6 API quan trọng)
+## Các thao tác chính (Top 6 API quan trọng)
 
 Dưới đây là 6 hàm cốt lõi, đại diện cho khả năng quản lý, tra cứu và mở rộng từ điển của hệ thống.
 
@@ -38,7 +38,7 @@ Dưới đây là 6 hàm cốt lõi, đại diện cho khả năng quản lý, t
 
 ---
 
-## 🛠️ Ghi chú triển khai
+## Ghi chú triển khai
 
 * **Chuẩn hóa Khóa:** Mọi từ khóa được xử lý đều được chuyển thành **chữ thường** (`ToLower()`) và **cắt khoảng trắng** (`Trim()`) để đảm bảo tính nhất quán trong tra cứu và lưu trữ.
 * **Đồng bộ Tệp:** Các hàm chỉnh sửa quan trọng (như `AddToFile`, `DeleteFromFile`, `AddSyn`, `DeleteSyn`) đảm bảo dữ liệu được cập nhật trong **bộ nhớ** và sau đó được **đồng bộ trở lại tệp**.
