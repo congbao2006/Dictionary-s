@@ -223,5 +223,71 @@ namespace Dicktionary.Services
                 return string.Join(", ", SynAntMeaning.Antonyms[word]);
             return "notfound";
         }
+
+
+        public static void SaveToFile(string path)
+        {
+            List<string> lines = new List<string>();
+
+            foreach (var kv in SynAntMeaning.Synonyms)
+            {
+                string word = kv.Key;
+
+                string syn = SynAntMeaning.Synonyms.ContainsKey(word)
+                    ? string.Join(", ", SynAntMeaning.Synonyms[word])
+                    : "";
+
+                string ant = SynAntMeaning.Antonyms.ContainsKey(word)
+                    ? string.Join(", ", SynAntMeaning.Antonyms[word])
+                    : "";
+
+                lines.Add($"{word}|{syn}|{ant}");
+            }
+
+            File.WriteAllLines(path, lines);
+        }
+
+        // ---------------------------
+        // DELETE SYN
+        // ---------------------------
+
+
+        public static bool DeleteSyn(string filePath, string word, string synonym)
+        {
+            word = word.ToLower();
+            synonym = synonym.ToLower();
+
+            if (!SynAntMeaning.Synonyms.ContainsKey(word))
+                return false;
+
+            bool removed = SynAntMeaning.Synonyms[word].Remove(synonym);
+
+            if (removed)
+                SaveToFile(filePath);
+
+            return removed;
+        }
+
+        // ---------------------------
+        // DELETE ANT
+        // ---------------------------
+
+        public static bool DeleteAnt(string filePath, string word, string antonym)
+        {
+            word = word.ToLower();
+            antonym = antonym.ToLower();
+
+            if (!SynAntMeaning.Antonyms.ContainsKey(word))
+                return false;
+
+            bool removed = SynAntMeaning.Antonyms[word].Remove(antonym);
+
+            if (removed)
+                SaveToFile(filePath);
+
+            return removed;
+        }
+
+
     }
 }

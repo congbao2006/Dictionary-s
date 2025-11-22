@@ -6,7 +6,8 @@ class Program
     static void Main()
     {
         Console.Clear();
-        string synAntFilePath = "/Users/bao/Desktop/Dicktionary-main/base/Data/SynAntWordData.txt";
-        SynAntDictionary.AddAnt(synAntFilePath,"sad", "glad");
+        string path = "/Users/bao/Desktop/Dicktionary-main/base/Data/FavoriteWordData.txt";
+        DictionaryMyFavorite.AddFavorite(path, "apple");
+        
     }
 }

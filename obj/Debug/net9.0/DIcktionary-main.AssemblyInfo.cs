@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DIcktionary-main")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c91deb6aa53b9081a8d2ed3abd6b15b98b51c30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62f24e060f5f8bd849cd268bcc6555ee5e46d990")]
 [assembly: System.Reflection.AssemblyProductAttribute("DIcktionary-main")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DIcktionary-main")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
