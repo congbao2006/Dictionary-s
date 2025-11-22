@@ -42,4 +42,5 @@ Dưới đây là 6 hàm cốt lõi, đại diện cho khả năng quản lý, t
 
 * **Chuẩn hóa Khóa:** Mọi từ khóa được xử lý đều được chuyển thành **chữ thường** (`ToLower()`) và **cắt khoảng trắng** (`Trim()`) để đảm bảo tính nhất quán trong tra cứu và lưu trữ.
 * **Đồng bộ Tệp:** Các hàm chỉnh sửa quan trọng (như `AddToFile`, `DeleteFromFile`, `AddSyn`, `DeleteSyn`) đảm bảo dữ liệu được cập nhật trong **bộ nhớ** và sau đó được **đồng bộ trở lại tệp**.
-* **Format Tệp:** Tệp từ điển chính sử dụng định dạng **Word** `|` **Definition** `|` **Description** `|` **Example**. Tệp Syn/Ant sử dụng định dạng **Word** `|` **Synonyms** `|` **Antonyms**.
+* **Format Tệp:** Tệp từ điển chính sử dụng định dạng **Word** `|` **Definition** `|` **Description** `|`
+* **Example**. Tệp Syn/Ant sử dụng định dạng **Word** `|` **Synonyms1, Synonyms2, ...** `|` **Antonyms1, Antonyms2, ...**.
