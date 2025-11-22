@@ -1,15 +1,15 @@
 using System;
 using System.Windows.Forms;
 using Dicktionary.Services;
-using System.Linq; // Cần dùng cho các Dictionary Keys
+using System.Linq;
 
 namespace DictionaryUI
 {
     public partial class Form1 : Form
     {
         // Khai báo 2 đường dẫn file
-        private string synAntPath = "Dictionary-main/src/Data/SynAntWordData.txt";
-        private string mainDictPath = "Dictionary-main/src/Data/MeaningWordData.txt";
+        private string synAntPath = "/Users/bao/Desktop/Dictionary-main/SynAntWordData.txt"; // Giả định
+        private string mainDictPath = "/Users/bao/Desktop/Dictionary-main/MeaningWordData.txt"; // Giả định
 
         public Form1()
         {
@@ -31,12 +31,12 @@ namespace DictionaryUI
         {
             flowWords.Controls.Clear();
 
-            // Lấy danh sách từ từ DictionaryService (đảm bảo hiển thị từ có định nghĩa)
+            // Lấy danh sách từ từ DictionaryService
             foreach (var word in DictionaryService.dictionary.Keys.OrderBy(w => w))
             {
                 Button btn = new Button();
                 btn.Text = word;
-                btn.Width = flowWords.Width - 25;   // full width button
+                btn.Width = flowWords.Width - 25;
                 btn.Height = 40;
                 btn.Margin = new Padding(5);
 
@@ -51,23 +51,45 @@ namespace DictionaryUI
 
         private void ShowMeaning(string word)
         {
-            // 1. Lấy Định nghĩa (Meaning, Description, Example)
-            string meaning = DictionaryService.Search(word.ToLower()); // Gọi service chính
+            word = word.Trim().ToLower(); // Chuẩn hóa từ khóa
 
-            // 2. Lấy Từ đồng/trái nghĩa
-            string syn = SynAntDictionary.SearchSyn(word.ToLower());
-            string ant = SynAntDictionary.SearchAnt(word.ToLower());
+            // 1. Kiểm tra từ có tồn tại trong từ điển chính không
+            if (!DictionaryService.dictionary.ContainsKey(word))
+            {
+                lblWord.Text = $"Từ: {word}";
+                lblMeaning.Text = "Không tìm thấy định nghĩa cho từ này.";
+                lblSyn.Text = "Synonyms: N/A";
+                lblAnt.Text = "Antonyms: N/A";
+                return;
+            }
 
-            // 3. Hiển thị lên Labels
+            // 2. Lấy Định nghĩa (Meaning, Description, Example)
+            string meaning = DictionaryService.Search(word);
+
+            // 3. Lấy Từ đồng/trái nghĩa
+            string syn = SynAntDictionary.SearchSyn(word);
+            string ant = SynAntDictionary.SearchAnt(word);
+
+            // 4. Hiển thị lên Labels
             lblWord.Text = word;
             
             // Xóa prefix "Từ: ..." từ kết quả trả về của DictionaryService.Search 
             // và thay thế các ký tự xuống dòng
             string cleanMeaning = meaning.Replace($"Từ: {word}\n", "").Replace("\n", Environment.NewLine);
-            lblMeaning.Text = "Meaning:\n" + cleanMeaning; 
+            lblMeaning.Text = "Meaning:\n" + cleanMeaning;
 
             lblSyn.Text = "Synonyms: " + syn;
             lblAnt.Text = "Antonyms: " + ant;
+        }
+        
+        // PHƯƠNG THỨC XỬ LÝ SỰ KIỆN TÌM KIẾM MỚI
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string searchWord = txtSearch.Text.Trim();
+            if (!string.IsNullOrEmpty(searchWord))
+            {
+                ShowMeaning(searchWord);
+            }
         }
     }
 }
