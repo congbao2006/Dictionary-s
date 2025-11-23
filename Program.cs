@@ -1,15 +1,22 @@
 ﻿using System;
-using Dictionary.Services;
+using System.Windows.Forms;
+using DictionaryUI; // Dùng namespace chứa Form1
 
-class Program
+namespace DictionaryApp // Thay thế bằng Namespace gốc của dự án bạn
 {
-    static void Main()
+    static class Program
     {
-        Console.Clear();
-        string path = "/Users/bao/Desktop/Dictionary-main/src/Data/MeaningWordData.txt";
-        DictionaryService.LoadFromFile(path);
-        //DictionaryService.AddToFile(path,"example", "a representative form or pattern", "This is a description.", "This is an example sentence.");
-        //Console.WriteLine(DictionaryService.Search("example"));
-        DictionaryService.SortFile(path);
+        /// <summary>
+        /// Điểm khởi tạo chính cho ứng dụng.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            
+            // Dòng này khởi chạy Form chính của bạn
+            Application.Run(new Form1()); 
+        }
     }
 }
