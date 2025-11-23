@@ -1,6 +1,6 @@
 using System;
 using System.Windows.Forms;
-using Dicktionary.Services;
+using Dictionary.Services;
 using System.Linq;
 
 namespace DictionaryUI
