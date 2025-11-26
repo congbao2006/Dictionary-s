@@ -1,21 +1,17 @@
 ﻿using System;
 using System.Windows.Forms;
-using DictionaryUI; // Dùng namespace chứa Form1
+using DictionaryUI; 
 
-namespace DictionaryApp // Thay thế bằng Namespace gốc của dự án bạn
+namespace DictionaryApp 
 {
     static class Program
     {
-        /// <summary>
-        /// Điểm khởi tạo chính cho ứng dụng.
-        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             
-            // Dòng này khởi chạy Form chính của bạn
             Application.Run(new Form1()); 
         }
     }
